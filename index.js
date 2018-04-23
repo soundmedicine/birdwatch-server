@@ -6,7 +6,7 @@ const cors = require('cors')
 const app = express()
 
 // Setup logger middleware
-app.use(morgan('tiny'))
+app.use(morgan('dev'))
 // Setup cors middleware
 app.use(cors())
 
