@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
         id: 3,
         commonName: 'Northern Shoveler',
         scientificName: 'Spatula clypeata',
-        image: 'https://www.allaboutbirds.org/guide/Northern_Shoveler/media-browser/60312481',
+        image: 'https://i.pinimg.com/originals/ce/4f/b2/ce4fb2c602d059d4f7adec3015162a6c.jpg',
         fact: 'The Northern Shoveler busily forages head down in shallow wetlands. Its uniquely shaped bill has comblike projections along its edges, which filter out tiny crustaceans and seeds from the water.',
         sightings: 0
       }, {
