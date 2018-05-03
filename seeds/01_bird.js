@@ -1,7 +1,7 @@
 
 exports.seed = function(knex, Promise) {
   
-  return knex.raw('DELETE FROM "bird"; ALTER SEQUENCE bird_id_seq RESTART WITH 6;')
+  return knex.raw('DELETE FROM "bird"; ALTER SEQUENCE bird_id_seq RESTART WITH 55;')
     .then(function () {
       let birds = [{
         id: 1,
