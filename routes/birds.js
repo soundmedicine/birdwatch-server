@@ -24,7 +24,7 @@ router.post("/", (request, response, next) => {
 
 router.delete("/:id", (request, response, next) => {
     queries.delete(request.params.id).then((deleted) => {
-        response.status(204).json({deleted: deleted})
+        response.status(200).json({deleted: deleted[0]})
     }).catch(next)
 })
 
