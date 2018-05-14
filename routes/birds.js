@@ -14,24 +14,24 @@ router.get("/:id", (request, response, next) => {
             ? response.json({bird})
             : response.status(404).json({message: 'Not found'})
     }).catch(next)
-});
+})
 
 router.post("/", (request, response, next) => {
     queries.create(request.body).then(bird => {
-        response.status(201).json({bird: bird});
+        response.status(201).json({bird: bird})
     }).catch(next)
-});
+})
 
 router.delete("/:id", (request, response, next) => {
-    queries.delete(request.params.id).then(() => {
-        response.status(204).json({deleted: true});
+    queries.delete(request.params.id).then((deleted) => {
+        response.status(204).json({deleted: deleted})
     }).catch(next)
-});
+})
 
 router.put("/:id", (request, response, next) => {
     queries.update(request.params.id, request.body).then(bird => {
-        response.json({bird: bird[0]});
+        response.json({bird: bird[0]})
     }).catch(next)
-});
+})
 
 module.exports = router

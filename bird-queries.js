@@ -16,6 +16,6 @@ module.exports = {
         .then(record => record[0])
     },
     delete(id){
-        return database('bird').where('id', id).del()
+        return database('bird').where('id', id).del().returning('*')
     }
 };
